@@ -21,100 +21,93 @@ int main() {
     return 0;
 }
 
-
 #include <stdio.h>
-
- // Desafio Super Trunfo - Países
-  // Tema 1 - Cadastro das Cartas
 
 int main(){
 
     //Variaveis carta 1
-    int pturisticos;
-    int População;
-    char Estado;
-    char codigo[04];
+    char Estado[50];
     char cidade[15];
+    int Populacao;
     float area;
+    int pturisticos;
     float pib;
- 
-
+    char codigo[04];
 
     //Variaveis carta 2
-    int Pturisticos2;
-    int População2;
-    char Estado2;
-    char codigo2[05];
+    char Estado2[50];
     char cidade2[15];
+    int Populacao2;
     float area2;
+    int Pturisticos2;
     float pib2;
-
+    char codigo2[05];
 
 
     //Leitura da carta 1
-    printf("Estado:\n");
-    scanf("%c", &Estado);
+    printf("Estado:");
+    scanf("%s", Estado);
 
-    printf("Cidade:\n");
-    scanf("%c", &cidade);
+    printf("Cidade:");
+    scanf("%s", cidade);
 
-    printf("População:\n");
-    scanf("%d", &População);
+    printf("População:");
+    scanf("%d", &Populacao);
 
-    printf("Area:\n");
+    printf("Area:");
     scanf("%f", &area);
-
-    printf("Ponto Turistico:\n");
+ 
+    printf("Ponto Turistico:");
     scanf("%d", &pturisticos);
 
-    printf("PIB:\n");
+    printf("PIB:");
     scanf("%f", &pib);
     
-    printf("Código da Carta:\n");
-    scanf("%c", &codigo);
+    printf("Codigo da Carta:");
+    scanf("%s", codigo);
    
     //Exibição carta 1
-    printf("Código %c \n", &codigo);
-    printf("Cidade: %s\n", &cidade);
-    printf("Estado: %c \n", &Estado);
-    printf("Ponto Turistico: %d \n", &pturisticos);
-    printf("Area: %f \n", &area);
-    printf("População: %d \n", &População);
-    printf("PIB: %f \n", &pib);
+    printf("Estado: %s \n", Estado);
+    printf("Cidade: %s \n", cidade);
+    printf("População: %d \n", Populacao);
+    printf("Area: %f \n", area);
+    printf("Ponto Turistico: %d \n", pturisticos);
+    printf("PIB: %f \n", pib);
+    printf("Código %s \n", codigo);
     
  
-    
+
     //Leitura da carta 2
-    printf("Estado2:\n");
-    scanf("%c", &Estado2);
+    printf("Estado2:");
+    scanf("%s", Estado2);
 
-    printf("Cidade2:\n");
-    scanf("%c", &cidade2);
+    printf("Cidade2:");
+    scanf("%s", cidade2);
 
-    printf("População2:\n");
-    scanf("%d", &População2);
+    printf("Populacao2:\n");
+    scanf("%d", &Populacao2);
 
-    printf("Area2:\n");
+    printf("Area2:");
     scanf("%f", &area2);
 
-    printf("Ponto Turistico2:\n");
+    printf("Ponto Turistico2:");
     scanf("%d", &Pturisticos2);
 
-    printf("PIB2:\n");
+    printf("PIB2:");
     scanf("%f", &pib2);
 
-    printf("código da carta2:\n");
-    scanf("%c", &codigo2);
+    printf("codigo da carta2:");
+    scanf("%s", codigo2);
  
 
     //Exibição carta 2
-    printf("codigo %c \n", &codigo2);
-    printf("Cidade: %s\n", &cidade2);
-    printf("Estado: %c \n", &Estado2);
-    printf("Ponto Turistico: %d \n", &Pturisticos2);
-    printf("Area: %f \n", &area2);
-    printf("População: %d \n", &População2);
-    printf("PIB: %f \n", &pib2);
+    printf("Estado: %s \n", Estado2);
+    printf("Cidade: %s \n", cidade2);
+    printf("Populacao: %d \n", Populacao2);
+    printf("Area: %f \n", area2);
+    printf("Ponto Turistico: %d \n", Pturisticos2);
+    printf("PIB: %f \n", pib2);
+    printf("codigo %s \n", codigo2);
 
     return 0;
 }
