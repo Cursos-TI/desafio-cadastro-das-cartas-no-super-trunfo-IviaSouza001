@@ -76,7 +76,7 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita);
     printf("Código: %s \n", codigo);
-    printf("Super Poder 1: %.3f\n", superPoder1);
+   
 
     // Leitura da carta 2
     printf("\n--- Carta 2 ---\n");
@@ -111,11 +111,19 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidadePopulacional2);
     printf("PIB per  Capita: %.2f reais\n", pibPerCapita2);
     printf("Código: %s \n", codigo2);
-    printf("Super Poder 2: %.3f\n", superPoder2);
+    
 
     //Resultado da carta vencedora
     printf("\n--- Carta vencedora ---\n");
-    printf("Super Poder 1 venceu? : %d\n", superPoder1 > superPoder2);
+
+    if (superPoder1 > superPoder2)
+    {
+        printf("Carta 1 venceu! \n");
+    }else
+    {
+        printf("Carta 2 venceu! \n");
+    }
+   
 
     return 0;
 
